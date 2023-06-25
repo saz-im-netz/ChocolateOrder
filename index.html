@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Smythe&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h1>My favorite chocolates</h1>
+                <h2>Everthing your heart desires and more</h2>
+            </div>
+        </header>
+        <main>
+            <section class="menu">
+                <div class="container" id="menu-container">
+                    
+                    <!-- menu goes here -->
+
+                </div>
+            </section>
+            
+            <section class="order">
+                <div id="order" class="container pre-order hidden">
+                    <h3>Your order</h3>
+                    <div class="order-list" id="order-list">
+                        
+                        <!-- ordered items go here -->
+
+                    </div>
+                    <div class="order-total">
+                        <h3>Total price:</h3>
+                        <h4 id="total-price"></h4>
+                    </div>
+                    
+                    <button type="button" id="order-btn">Complete order</button>
+                </div>
+                <div class="container order-completed hidden">
+                    
+                </div>
+            </section>
+
+        </main>
+
+        <div class="card-details-modal hidden" id="payment-modal">
+            <h5>Enter card details</h5>
+            <input id="name-input" type="text" placeholder="Enter your name" required>
+            <input id="card-input" type="number" placeholder="Enter card number" required>
+            <input id="cvv-input" type="number" placeholder="Enter CVV" required>
+            <button type="button" id="pay-btn">Pay</button>
+        </div>
+        
+
+
+
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
